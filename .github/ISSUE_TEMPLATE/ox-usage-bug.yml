@@ -1,0 +1,30 @@
+name: 🎯 Usage Issue
+labels: ['bug', 'usage']
+description: Report issues related to product usage
+title: "[Usage]: "
+body:
+  - type: dropdown
+    attributes:
+      label: Severity
+      description: How severely does this issue impact your user experience?
+      options:
+        - "1 - Minor inconvenience"
+        - "2 - Slightly annoying"
+        - "3 - Noticeable problem"
+        - "4 - Moderate disruption"
+        - "5 - Significant issue"
+        - "6 - Major problem"
+        - "7 - Serious disruption"
+        - "8 - Critical issue"
+        - "9 - Severe problem"
+        - "10 - Completely unusable"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Issue Description
+      description: Describe the usage issue you're experiencing
+      placeholder: Tell us what's happening...
+    validations:
+      required: true
