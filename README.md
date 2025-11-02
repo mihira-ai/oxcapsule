@@ -50,7 +50,7 @@ capsule list --json             # JSON output for scripting
 
 ### Remote Development
 ```bash
-capsule launch <config>         # Open Terminal remotely
+capsule term <config>           # Open Terminal remotely
 capsule code <config>           # Open VS Code remotely
 capsule cursor <config>         # Open Cursor remotely
 ```
@@ -77,9 +77,9 @@ capsule config banner           # Toggle banner display
 ## Getting Help
 
 - **CLI Help**: `capsule --help` or `capsule [command] --help`
-- **Discord**: Check your beta approval email for the Discord server invite link. This is an invite-only community.
+- **Discord**: Join our invite-only OxCapsule community. [Discord/OxCapsule](https://discord.gg/Ds5hUdng)
 - **Known Issues**: Please refer to github issues on the project here: [OxCapsule/issues](https://github.com/mihira-ai/oxcapsule/issues)
-- **Maintanece and Down Time**: Please note that there will be scheduled maintanence which can cause down time. Users are advised to check the discord channel for any updates
+- **Maintanence and Down Time**: Please note that there will be scheduled maintanence which can cause down time. Users are advised to check the discord channel for any updates
 - **Support**: OxCapsule support is available Monday–Friday, 9 AM–5 PM PT (US West Coast), please expect delays in responses depending on your time zone.
 
-## <Add oxmiq website link and information>
+## [OXMIQ.AI](https://oxmiq.ai/)
