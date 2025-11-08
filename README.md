@@ -12,7 +12,7 @@ OxCapsule is a CLI tool that instantly connects you to high-performance remote m
 OxCapsule is currently provided as public beta only with invites. Users will be receiving email after the access is approved and will require to follow the steps in the email to download the OxCapsule client
 
 ## Installation
-For detailed platform specific installation steps and screenshots. Refer to [oxcapsule/oxcapsule_intall_guide.md](https://github.com/mihira-ai/oxcapsule/blob/shashb27-oxcapsule-docs-update/oxcapsule_install_guide.md)
+For detailed platform specific installation steps and screenshots. Refer to [oxcapsule/oxcapsule_intall_guide.md](https://github.com/mihira-ai/oxcapsule/blob/main/oxcapsule_install_guide.md)
 
 ## First Time Authentication
 Users need to authenticate and validate their email address used for the beta access, set password for the authentication to be successfull. Note: This is one time process only.
