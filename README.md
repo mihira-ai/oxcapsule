@@ -54,15 +54,7 @@ capsule term <config>           # Open Terminal remotely
 capsule code <config>           # Open VS Code remotely
 capsule cursor <config>         # Open Cursor remotely
 ```
-
-### Docker Containers
-```bash
-capsule docker <config>         # Run Docker container
-  --image <image>               # Specify Docker image
-  --memory <gb>                 # Set memory limit
-  --volume <volume>             # Mount volumes
-  --command <command>           # Container command
-```
+#### Note: Some launch commands (`exec`, `ssh`, `--repo`) are unavailable for Phase 1 of OxCapsule. Please refrain from using these features in this initial release.
 
 ### Pixel Streaming (Currently supported for users based in USA only)
 ```bash

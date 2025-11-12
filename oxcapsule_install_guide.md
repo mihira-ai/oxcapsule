@@ -79,6 +79,8 @@ This will:
 3. **Connection Issues**
    - Verify network connectivity to remote servers
    - Check firewall settings
+   - If experiencing issues reconnecting to a machine, run `capsule cleanup`.
+   Note: When logged into another machine, this command will terminate active concurrent sessions.
 
 ### Log Files
 
