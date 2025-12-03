@@ -52,6 +52,25 @@ This will:
 3. Create system-wide symlink
 4. Verify the installation
 
+If the project continually asks for permission to run the application, run `sudo xattr -r -d com.apple.quarantine /usr/local/capsule-cli/bin/*` for permission issues
+
+### Linux Installation
+
+Make sure `install-oxcapsule-linux.sh` and `capsule-cli-0.2.4-linux-x64-public.gz` are in the same directory. Navigate to that directory in a terminal window then run:
+
+```bash
+chmod +x install-oxcapsule-linux.sh
+./install-oxcapsule-linux.sh
+Go through the installation steps
+Press Y when prompted for symlink creation
+```
+
+This will:
+1. Extract the OxCapsule CLI
+2. Install to `/usr/local/capsule-cli`
+3. Create system-wide symlink
+4. Verify the installation
+
 ## Troubleshooting
 
 ### Installation Issues
@@ -64,7 +83,7 @@ This will:
 #### macOS
 - **Permission denied**: Run `sudo chmod +x /usr/local/capsule-cli/bin/capsule`
 - **Command not found**: Verify symlink with `ls -la /usr/local/bin/capsule`
-- **Persistent blocking**: Remove quarantine with `sudo xattr -r -d com.apple.quarantine /usr/local/capsule-cli/bin/capsule`
+- **Persistent blocking**: Remove quarantine with `sudo xattr -r -d com.apple.quarantine /usr/local/capsule-cli/bin/*`
 
 ### Common Usage Issues
 
@@ -79,8 +98,10 @@ This will:
 3. **Connection Issues**
    - Verify network connectivity to remote servers
    - Check firewall settings
+   - Check whether your internet is behind a CGNAT or a symmetric NAT. If so, capsule connections will not succeed. We are currently looking for a solution for this issue.
    - If experiencing issues reconnecting to a machine, run `capsule cleanup`.
    Note: When logged into another machine, this command will terminate active concurrent sessions.
+     After running `capsule cleanup`, please wait 30 seconds before attempting to reconnect.
 
 ### Log Files
 
