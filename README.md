@@ -54,7 +54,7 @@ capsule term <config>           # Open Terminal remotely
 capsule code <config>           # Open VS Code remotely
 capsule cursor <config>         # Open Cursor remotely
 ```
-#### Note: Some launch commands (`exec`, `ssh`, `--repo`) are unavailable for Phase 1 of OxCapsule. Please refrain from using these features in this initial release.
+#### Note: Some launch options (`exec` and `--repo`) are unavailable for Phase 1 of OxCapsule. Please refrain from using these features in this initial release.
 
 ### Pixel Streaming (Currently supported for users based in USA only)
 ```bash
