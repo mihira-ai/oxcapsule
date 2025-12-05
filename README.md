@@ -28,7 +28,8 @@ capsule auth login              # Login
   - Once verification is completed, click on Continue button
   - Enter your new password and confirm your password
   - Click Continue
-  - Authentication complete message will be displayed confirming the successfull authentication
+  - Password reset is now completed
+  - Users will be provided a code, copy the code and paste in the terminal for successfull authentication
 
 **User can now continue with the available commands section on terminal**
 
