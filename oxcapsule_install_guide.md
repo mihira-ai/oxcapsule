@@ -1,7 +1,7 @@
 # OxCapsule Download & Installation Guide
 
 ## Download
-Users should use the link provided in the email to download the OxCaspule zip file
+Users should use the link provided in the email to download the OxCaspule v0.2.29 zip file
 Extract the contents of the zip file
 
 ## Installation
@@ -20,7 +20,7 @@ Extract the contents of the zip file
 
 ### Windows Installation
 
-Make sure `install-oxcapsule-win.ps1` and `capsule-cli-0.2.4-win-x64-public.tar.gz` are in the same directory (e.g. Downloads). Navigate to that directory in an Administrator Powershell window, then run:
+Make sure `install-oxcapsule-win.ps1` and `capsule-cli-0.2.29-win-x64-public.tar.gz` are in the same directory (e.g. Downloads). Navigate to that directory in an Administrator Powershell window, then run:
 
 ```powershell
 Unblock-File -Path .\install-oxcapsule-win.ps1
@@ -37,7 +37,7 @@ This will:
 
 ### macOS Installation
 
-Make sure `install-oxcapsule-osx.sh` and `capsule-cli-0.2.4-osx-arm64-public.gz` are in the same directory (e.g. Downloads). Navigate to that directory in a terminal window then run:
+Make sure `install-oxcapsule-osx.sh` and `capsule-cli-0.2.29-osx-arm64-public.gz` are in the same directory (e.g. Downloads). Navigate to that directory in a terminal window then run:
 
 ```bash
 chmod +x install-oxcapsule-osx.sh
@@ -56,7 +56,7 @@ If the project continually asks for permission to run the application, run `sudo
 
 ### Linux Installation
 
-Make sure `install-oxcapsule-linux.sh` and `capsule-cli-0.2.4-linux-x64-public.gz` are in the same directory. Navigate to that directory in a terminal window then run:
+Make sure `install-oxcapsule-linux.sh` and `capsule-cli-0.2.29-linux-x64-public.gz` are in the same directory. Navigate to that directory in a terminal window then run:
 
 ```bash
 chmod +x install-oxcapsule-linux.sh
