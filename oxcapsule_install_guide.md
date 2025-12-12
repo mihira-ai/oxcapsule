@@ -109,3 +109,4 @@ For additional debugging, check the log files located at:
 
 - **Windows**: `%APPDATA%\capsule\logs`
 - **macOS**: `~/Library/Application Support/capsule/logs`
+- **Linux** `$HOME/.config/capsule/logs/`
