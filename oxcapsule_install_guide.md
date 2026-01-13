@@ -1,4 +1,6 @@
-# OxCapsule Download & Installation Guide
+# OxCapsule (First Time) Download & Installation Guide
+
+**Note: If you are updating capsule, please use the `capsule update` command to download the latest cli version**
 
 ## Download
 Users should use the link provided in the email to download the OxCaspule v0.2.29 zip file
@@ -98,10 +100,14 @@ This will:
 3. **Connection Issues**
    - Verify network connectivity to remote servers
    - Check firewall settings
-   - Check whether your internet is behind a CGNAT or a symmetric NAT. If so, capsule connections will not succeed. We are currently looking for a solution for this issue.
+   - Check whether your internet is behind a CGNAT or a symmetric NAT. If so, capsule connections will not succeed. We are developing a solution for this issue.
    - If experiencing issues reconnecting to a machine, run `capsule cleanup`.
-   Note: When logged into another machine, this command will terminate active concurrent sessions.
-     After running `capsule cleanup`, please wait 30 seconds before attempting to reconnect.
+      **Note: When logged into another machine, this command will terminate active concurrent sessions.**
+      After running `capsule cleanup`, please wait 30 seconds before attempting to reconnect.
+
+4. **MacOS prompt to "Allow Keychain Access"**
+   - Your authentication token needs to be stored securely in Apple's vault.
+   - Enter yur system password and click "Always Allow" to allow OxCapsule to safely store credentials on your system.
 
 ### Log Files
 
