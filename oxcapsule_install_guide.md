@@ -61,9 +61,11 @@ If the project continually asks for permission to run the application, run `sudo
 Make sure `install-oxcapsule-linux.sh` and `capsule-cli-0.2.29-linux-x64-public.gz` are in the same directory. Navigate to that directory in a terminal window then run:
 
 ```bash
+# Install dependencies
+sudo apt install libgl1 libglu1 libxdamage1 libva2 libva-drm2 libva-x11-2 libvdpau1
 chmod +x install-oxcapsule-linux.sh
 ./install-oxcapsule-linux.sh
-Go through the installation steps
+# Go through the installation steps
 Press Y when prompted for symlink creation
 ```
 
@@ -101,13 +103,21 @@ This will:
    - Verify network connectivity to remote servers
    - Check firewall settings
    - Check whether your internet is behind a CGNAT or a symmetric NAT. If so, capsule connections will not succeed. We are developing a solution for this issue.
+   - If on Linux, please download the following packages:
+   ```
+      sudo apt install libgl1 libglu1 libxdamage1 libva2 libva-drm2 libva-x11-2 libvdpau1
+   ```
    - If experiencing issues reconnecting to a machine, run `capsule cleanup`.
       **Note: When logged into another machine, this command will terminate active concurrent sessions.**
       After running `capsule cleanup`, please wait 30 seconds before attempting to reconnect.
+   - 
 
 4. **MacOS prompt to "Allow Keychain Access"**
    - Your authentication token needs to be stored securely in Apple's vault.
    - Enter yur system password and click "Always Allow" to allow OxCapsule to safely store credentials on your system.
+
+5. **Failed update**
+   - Updates will fail on Windows machines when a session is active. When this occurs, please reinstall capsule with the latest manual official package. This will clear up issues with the capsule installation.
 
 ### Log Files
 
