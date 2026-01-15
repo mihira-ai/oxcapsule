@@ -2,6 +2,8 @@
 
 OxCapsule is a CLI tool that instantly connects you to high-performance remote machines for development, training models, running containers, and more. Stop worrying about local hardware limitations—work with the compute you need, when you need it.
 
+[Latest Release Notes](./Release_notes.md)
+
 ## Why OxCapsule?
 - **Instant Access**: Connect to GPU/CPU clusters in seconds, not hours
 - **Your Tools, Remote Power**: Use VS Code, Cursor, or SSH with remote machines seamlessly
