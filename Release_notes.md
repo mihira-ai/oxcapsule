@@ -1,5 +1,53 @@
 # Releases
 
+## v0.2.83 - release Feb 18 2025
+
+Our latest OxCapsule version adds several new functionalities focusing on enhancing storage solutions and data transfer.
+
+To download the latest version, please try running "`capsule update`" to get the newest capsule version. 
+What's New:
+
+## 🤖 Capsule Benchmark
+
+- New `capsule benchmark` command: `capsule benchmark -u <machine-name> <model-name>`
+- One-command LLM inference benchmarking on remote GPU machines
+- Automatic GPU detection, backend selection, and optimization
+- Comprehensive metrics: throughput (requests/sec, tokens/sec), TTFT, TPOT, ITL
+- Supported NVIDIA GPUs: **RTX 5090, RTX A6000**
+- Supported AMD/Intel GPUs: **AMD Radeon RX 7900 XTX, Intel Arc A770/B60**
+
+## 📩 Scp Command
+- New `capsule scp` command to allow copying of files between your local machine and other capsule machines.
+- `capsule scp upload` to send files/folders to the remote machine
+- `capsule scp download` to retrieve files/folders from a remote machine
+
+## 💡Capsule CLI Improvements
+
+- Docker access returned to the public environment
+- Capsule tests show up on the tests Dashboard
+- Fixed issue with`capsule list` for MacOS where terminals showed blackspace errors.
+- Fixed warnings and crashes with `capsule stream` on MacOS
+- Increased idle-timeout to 90 minutes.
+- Fixed bug where machines fail to come back after a system reboot.
+- Additional client logging for connections
+- Significantly reduced server log spam
+- Various improvements to automation and packaging
+- Fixed issue where OneDrive mount would expire and fail to remount
+- Package-dependent default environment
+- VRAM Capacity displays for Windows machines
+
+## 📦 Local Persistent Storage
+- UserStorage directory available for use as persistent storage across machines.
+- Take your data across multiple machines where it's stored between sessions
+
+## ✅ Bashrc Override
+- OxCapsule automatically preserves any edits you make to your .bashrc file
+- `capsule config bashrc_override enable/disable` commands
+- Enable bashrc override to override your .bashrc file on launch
+
+## 🚀 New Launch Options
+- `--options` is available when using the `ssh`, `term`, or `scp` commands, allows the passing in of ssh options.
+
 ## v0.2.48 - release Jan 14 2025
 
 ### What's New:

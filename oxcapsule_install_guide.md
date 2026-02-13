@@ -116,8 +116,15 @@ This will:
    - Your authentication token needs to be stored securely in Apple's vault.
    - Enter yur system password and click "Always Allow" to allow OxCapsule to safely store credentials on your system.
 
-5. **Failed update**
+5. **Mounting a Personal OneDrive**
+   - Open a docker container on remote machine
+   - Run this command to setup docker: `docker run -v ~/OneDrive:/OneDrive -it ubuntu`
+
+6. **Failed update**
    - Updates will fail on Windows machines when a session is active. When this occurs, please reinstall capsule with the latest manual official package. This will clear up issues with the capsule installation.
+
+7. **In a mount, git shows all files as executable**
+   - If doing dev work in a UserStorage or OneDrive mount, the setting `git config core.fileMode false` must be run. Mounts will automatically set every file and folder to executable; this is immutable. Set git to ignore file perm changes in the git diff. 
 
 ### Log Files
 

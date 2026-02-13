@@ -58,13 +58,32 @@ capsule list --json             # JSON output for scripting
 capsule term <config>           # Open Terminal remotely
 capsule code <config>           # Open VS Code remotely
 capsule cursor <config>         # Open Cursor remotely
+capsule exec <config> <command> # Run a single command remotely
+capsule scp upload <config> <src> <dest> 
+                                # Transfer files to remote machine
+capsule scp download <config> <src> <dest> 
+                                # Retrieve files from remote machine to local
 ```
-#### Note: Some launch options (`exec` and `--repo`) are unavailable for Phase 1 of OxCapsule. Please refrain from using these features in this initial release.
+#### Note: Some launch options (`--repo`) are unavailable for Phase 1 of OxCapsule. Please refrain from using these features in this initial release.
 
 ### Pixel Streaming (Currently supported for users based in USA only)
 ```bash
 capsule stream <config>         # Launch streaming session
 ```
+
+### GPU Benchmarking
+```bash
+capsule benchmark -u <machine-name> <model-name>
+```
+- Supported NVIDIA GPUs: **RTX 5090, RTX A6000**
+- Supported AMD/Intel GPUs: **AMD Radeon RX 7900 XTX, Intel Arc A770/B60**
+- Supported backends: vLLM (NVIDIA default), llama.cpp (Intel/AMD default)
+- `--backend <vllm|llamacpp>` flag to override automatic backend selection
+- `--concurrency <num>` to set max concurrent requests (default: 512)
+- `--input-length <tokens>` to set prompt length (default: 1024)
+- `--output-length <tokens>` to set generation length (default: 1024)
+- `--num-prompts <num>` to set total requests (default: 2560)
+- `--tensor-parallel-size <num>` for multi-GPU parallelism (default: 1)
 
 ### Configuration
 ```bash
