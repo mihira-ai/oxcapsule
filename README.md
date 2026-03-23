@@ -76,7 +76,7 @@ capsule stream <config>         # Launch streaming session
 capsule benchmark -u <machine-name> <model-name>
 ```
 - Supported NVIDIA GPUs: **RTX 5090, RTX A6000**
-- Supported AMD/Intel GPUs: **AMD Radeon RX 7900 XTX, Intel Arc A770/B60**
+- Supported AMD/Intel GPUs: **AMD Radeon RX 7900 XTX, Intel Arc A770/B60, AMD TinyBox**
 - Supported backends: vLLM (NVIDIA default), llama.cpp (Intel/AMD default)
 - `--backend <vllm|llamacpp>` flag to override automatic backend selection
 - `--concurrency <num>` to set max concurrent requests (default: 512)

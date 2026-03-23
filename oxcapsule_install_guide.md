@@ -3,7 +3,7 @@
 **Note: If you are updating capsule, please use the `capsule update` command to download the latest cli version**
 
 ## Download
-Users should use the link provided in the email to download the OxCaspule v0.2.29 zip file
+Users should use the link provided in the email to download the OxCaspule v0.3.13 zip file
 Extract the contents of the zip file
 
 ## Installation
@@ -22,7 +22,7 @@ Extract the contents of the zip file
 
 ### Windows Installation
 
-Make sure `install-oxcapsule-win.ps1` and `capsule-cli-0.2.29-win-x64-public.tar.gz` are in the same directory (e.g. Downloads). Navigate to that directory in an Administrator Powershell window, then run:
+Make sure `install-oxcapsule-win.ps1` and `capsule-cli-<version>-win-x64-public.tar.gz` are in the same directory (e.g. Downloads). Navigate to that directory in an Administrator Powershell window, then run:
 
 ```powershell
 Unblock-File -Path .\install-oxcapsule-win.ps1
@@ -39,7 +39,7 @@ This will:
 
 ### macOS Installation
 
-Make sure `install-oxcapsule-osx.sh` and `capsule-cli-0.2.29-osx-arm64-public.gz` are in the same directory (e.g. Downloads). Navigate to that directory in a terminal window then run:
+Make sure `install-oxcapsule-osx.sh` and `capsule-cli-<version>-osx-arm64.gz` are in the same directory (e.g. Downloads). Navigate to that directory in a terminal window then run:
 
 ```bash
 chmod +x install-oxcapsule-osx.sh
@@ -58,7 +58,7 @@ If the project continually asks for permission to run the application, run `sudo
 
 ### Linux Installation
 
-Make sure `install-oxcapsule-linux.sh` and `capsule-cli-0.2.29-linux-x64-public.gz` are in the same directory. Navigate to that directory in a terminal window then run:
+Make sure `install-oxcapsule-linux.sh` and either `capsule-cli-<version>-linux-x64-public.gz` or `capsule-cli-<version>-linux-x64-22.04.gz` are in the same directory. Navigate to that directory in a terminal window then run:
 
 ```bash
 # Install dependencies
@@ -102,15 +102,11 @@ This will:
 3. **Connection Issues**
    - Verify network connectivity to remote servers
    - Check firewall settings
-   - Check whether your internet is behind a CGNAT or a symmetric NAT. If so, capsule connections will not succeed. We are developing a solution for this issue.
+   - Check whether your internet is behind a CGNAT or a symmetric NAT. If so, please contact us via Discord or Email.
    - If on Linux, please download the following packages:
    ```
       sudo apt install libgl1 libglu1 libxdamage1 libva2 libva-drm2 libva-x11-2 libvdpau1
    ```
-   - If experiencing issues reconnecting to a machine, run `capsule cleanup`.
-      **Note: When logged into another machine, this command will terminate active concurrent sessions.**
-      After running `capsule cleanup`, please wait 30 seconds before attempting to reconnect.
-   - 
 
 4. **MacOS prompt to "Allow Keychain Access"**
    - Your authentication token needs to be stored securely in Apple's vault.
