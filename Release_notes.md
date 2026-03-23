@@ -1,6 +1,37 @@
 # Releases
 
-## v0.2.83 - release Feb 18 2025
+# OxCapsule v0.3.13 - release Mar 18 2026
+
+Our latest OxCapsule version is focused on quality of life improvements for connectivity and preventing connection dropouts. In addition, Ubuntu 22.04 compatibility was reintroduced for Linux clients. Make sure download this latest client to leverage the variety of connection fixes made by the OxCapsule team.
+
+To download the latest version, please try running "`capsule update`" to get the newest capsule version. 
+What's New:
+
+## 🤖 Capsule Benchmark
+- Website for viewing benchmark results: https://oxcapsulebenchmark.z22.web.core.windows.net/
+- GPU support: RTX 5090, RTX A6000, AMD TinyBox
+- Run benchmarks using either --backend vllm or --backend llamacpp
+- Run capsule benchmark --help to see all available parameters
+
+##  🔌 Connection Fixes
+- Fixed issue where all connections would drop after any individual connection drops
+- Fixed various bugs involving connection state tracking
+- Fixed issue on Windows where connections wouldn't close ports
+
+## 🖥️ Linux Ubuntu 22.04
+- Reintroduced support for Linux Ubuntu 22.04 as a separate package
+
+## 💡Capsule CLI Improvements
+- `capsule list --filter` can filter by OS
+- Log messages made more unified across commands
+- Better handling of `capsule update` timeout 
+- `capsule update` on Linux will download apt dependencies
+- Better UI for `capsule update`
+
+## 📦 Storage Changes
+- Flexible storage quota design to control available storage
+
+## v0.2.83 - release Feb 18 2026
 
 Our latest OxCapsule version adds several new functionalities focusing on enhancing storage solutions and data transfer.
 
@@ -48,7 +79,7 @@ What's New:
 ## 🚀 New Launch Options
 - `--options` is available when using the `ssh`, `term`, or `scp` commands, allows the passing in of ssh options.
 
-## v0.2.48 - release Jan 14 2025
+## v0.2.48 - release Jan 14 2026
 
 ### What's New:
 
@@ -74,7 +105,7 @@ What's New:
 * Windows updates can fail to remove all files and get stuck in a bad state
 * `capsule list` shows blackspace for colored text on macOS
 
-## v 0.2.29 - release Dec 4 2025
+## v0.2.29 - release Dec 4 2025
 
 ### What's New:
 
