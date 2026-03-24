@@ -73,17 +73,24 @@ capsule stream <config>         # Launch streaming session
 
 ### GPU Benchmarking
 ```bash
-capsule benchmark -u <machine-name> <model-name>
+capsule benchmark [-u] <machine> <model>
 ```
-- Supported NVIDIA GPUs: **RTX 5090, RTX A6000**
-- Supported AMD/Intel GPUs: **AMD Radeon RX 7900 XTX, Intel Arc A770/B60, AMD TinyBox**
-- Supported backends: vLLM (NVIDIA default), llama.cpp (Intel/AMD default)
-- `--backend <vllm|llamacpp>` flag to override automatic backend selection
-- `--concurrency <num>` to set max concurrent requests (default: 512)
-- `--input-length <tokens>` to set prompt length (default: 1024)
-- `--output-length <tokens>` to set generation length (default: 1024)
-- `--num-prompts <num>` to set total requests (default: 2560)
-- `--tensor-parallel-size <num>` for multi-GPU parallelism (default: 1)
+- -u / --unique — treat <machine> as a unique machine ID instead of a machine name
+- Supported NVIDIA GPUs: RTX 5090, RTX A6000, RTX 3060 ti — default backend: vLLM, llama.cpp
+- Supported AMD: Tinybox (6x AMD Radeon RX 7900 XTX): llama.cpp
+- **Please set HF token before running benchmark**
+
+**Options:**
+
+| Flag | Alias | Default | Description |
+|------|-------|---------|-------------|
+| `--backend` | `-b` | auto | Inference backend: `vllm`, `llamacpp`|
+| `--concurrency` | `-c` | `4` | Max concurrent requests (`max-num-seqs`) |
+| `--input-length` | `--isl` | `128` | Prompt length in tokens |
+| `--output-length` | `--osl` | `128` | Generation length in tokens |
+| `--num-prompts` | `-n` | `concurrency × 10` | Total number of requests |
+| `--quantization` | `--quant`, `-q` | _(none)_ | Quantization method (e.g. `awq`, `fp8`, `Q4_K_M`) |
+| `--no-upload` | | `false` | Skip uploading results to cloud storage (saved locally) |
 
 ### Configuration
 ```bash
