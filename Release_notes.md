@@ -1,5 +1,56 @@
 # Releases
 
+# OxCapsule v0.3.127
+
+Our latest OxCapsule version introduces app streaming, the new `capsule schedule` and `capsule chat` commands, and a variety of quality of life improvements across the CLI and streamer. The `capsule launch` command has been deprecated in favor of `capsule terminal`. Make sure to run `capsule update` to get the newest version.
+
+What's New:
+
+## 🎮 App Streaming
+- Stream specific applications instead of full desktops with `capsule stream --app <app-id>`
+- Configuration file support for advanced streaming setups
+- Only available for streaming from and to Windows machines
+- Available apps are `davinci_resolve` and `blender`
+
+## 📅 Capsule Schedule Command
+- New `capsule schedule` command for running tasks on remote machines using scripts
+- Can run multiple tasks concurrently
+- Use `capsule schedule status` and `capsule schedule logs [task-id]` to view statuses of running tasks
+- E.g. `capsule schedule start --machine-name Machine --script hello_world.sh --name "Hello World"`
+
+## 🗨️ Capsule Chat Command
+- New `capsule chat` command for conversing with models using remote machines' GPUs
+- E.g. `capsule chat -u Machine Qwen/Qwen2-0.5B-Instruct`
+- Use `.exit` to leave the chat
+
+## 🤖 Capsule MCP Command
+- New `capsule mcp` command for adding an mcp plugin to your agents and AI tools
+- Allows agents to list machines, launch benchmarks, and run commands
+
+## 🖥️ Capsule Status Command
+- New `capsule status` command for viewing current session and connection info
+
+## 📊 Benchmark Improvements
+- Added `--idle-timeout` and `--max-session-length` arguments to `capsule benchmark`
+- Disk space pre-flight check before benchmark runs
+
+## 🖼️ `capsule stream` Improvements
+- Fixed issues with `capsule stream` failing to startup and displaying black screens
+- Improved `capsule stream` performance
+- Improved mouse tracking in resized windows
+
+## 💡 Capsule CLI Improvements
+- `capsule launch` deprecated, and now an alias of `capsule ssh`
+- Expired tokens now explicitly rejected during `auth login`
+- Private capsule machines now show in `capsule list`
+- Hide updater logs on macOS
+- Added appropriate fallbacks for launching with `--repo`
+- Added `user-storage-mount-dir` config option
+- Fixes to prevent hanging sessions and reconnect attempts
+
+## 🐚 Session Setup
+- Welcome message displayed on session connect
+
 # OxCapsule v0.3.13 - release Mar 18 2026
 
 Our latest OxCapsule version is focused on quality of life improvements for connectivity and preventing connection dropouts. In addition, Ubuntu 22.04 compatibility was reintroduced for Linux clients. Make sure download this latest client to leverage the variety of connection fixes made by the OxCapsule team.
