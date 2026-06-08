@@ -4,6 +4,12 @@ OxCapsule is a CLI tool that instantly connects you to high-performance remote m
 
 [Latest Release Notes](./Release_notes.md)
 
+## Documentation
+
+- [Installation Guide](./oxcapsule_install_guide.md)
+- [Troubleshooting Guide](./troubleshooting_guide.md)
+- [Latest Release Notes](./Release_notes.md)
+
 ## Why OxCapsule?
 - **Instant Access**: Connect to GPU/CPU clusters in seconds, not hours
 - **Your Tools, Remote Power**: Use VS Code, Cursor, or SSH with remote machines seamlessly
@@ -16,7 +22,7 @@ OxCapsule is currently provided as public beta only with invites. Users will be 
 ## Installation
 **Note: If you are updating capsule, please use the `capsule update` command to download the latest cli version**
 
-For detailed platform specific installation steps and screenshots. Refer to [oxcapsule/oxcapsule_intall_guide.md](https://github.com/mihira-ai/oxcapsule/blob/main/oxcapsule_install_guide.md)
+For detailed platform specific installation steps and screenshots. Refer to [Installation Guide](./oxcapsule_install_guide.md)
 
 ## First Time Authentication
 Users need to authenticate and validate their email address used for the beta access, set password for the authentication to be successfull. Note: This is one time process only.
@@ -63,6 +69,7 @@ capsule scp upload <config> <src> <dest>
                                 # Transfer files to remote machine
 capsule scp download <config> <src> <dest> 
                                 # Retrieve files from remote machine to local
+capsule claude <config>         # Claude Desktop Remote-SSH option to the configured machine
 ```
 #### Note: Some launch options (`--repo`) are unavailable for Phase 1 of OxCapsule. Please refrain from using these features in this initial release.
 
