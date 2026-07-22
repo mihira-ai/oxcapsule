@@ -1,5 +1,36 @@
 # Releases
 
+# OxCapsule v0.5.0
+
+Our latest OxCapsule version introduces the new `capsule agent`, `capsule orbit`, and `capsule completion` commands, as well as a variety of QOL improvements for consistency while using capsule. Also, `capsule cleanup` has been removed in favor of `capsule session`. To emulate the same behavior as `capsule cleanup`, run `capsule session endall`. 
+
+To download the latest version, please try running "capsule update" to get the newest capsule version.
+
+## What's New:
+
+## 🕴️ Capsule Agent
+- New `capsule agent` command to chat with or run one-shot prompts with Capsule agents
+- Includes three agents: Capsule helper, OxSol AI-systems-design, and OxTutor learning agents
+- Base URL compatible with OpenAI
+
+## 🌐 Capsule Orbit
+- New `capsule orbit` command (alias `capsule summary`) to show orbit overview of Capsule fleet
+- Use --once flag to only show orbit screenshot, --filter flag to show specific types of machines, and --json to dump snapshot
+- Refreshes every 5 minutes, manually refresh orbit view with 'R' key
+
+## 💯 Capsule Completion
+- New `capsule completion` command to generate script for autocompleting capsule commands
+- Compatible with bash, fish, pwsh, zsh
+
+## 💡 Capsule CLI Improvements
+- More stable connections to capsule machines
+- Headless Linux users do not need to use keyring script anymore
+- `ssh`: Local port to bind connection to is now a flag at --host-port (this also works for other commands like `capsule code`) 
+- `cleanup`: Command removed in favor of `capsule session`
+- `session`: Much better control over ending sessions on all OS
+- `benchmark`: Cleaner error handling and formatting
+- `mcp`: More consistency in MCP usage
+
 # OxCapsule v0.3.156
 
 Our latest OxCapsule version introduces the new `capsule claude` and `capsule comfy` commands, as well as a variety of QOL improvements for consistency while using capsule. To download the latest version, please try running "capsule update" to get the newest capsule version.
