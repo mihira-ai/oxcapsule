@@ -1,6 +1,21 @@
 # Releases
 
-# OxCapsule v0.5.0
+# OxCapsule v0.5.39 - release July 30 2026
+This release focuses on error and bug messages for commands like `term`, `session`, `stream`, and `schedule`.
+
+## 🐛 Tweaks and Bug Fixes
+ - `capsule auth token` and `capsule status` read from environment variable CAPSULE_AUTH_TOKEN
+ - `capsule session end -u` no longer case-sensitive
+ - `--host-port` and `--repo` can be used together
+ - `capsule stream --app` works without specifying a machine
+ - `capsule schedule clear-history` clears schedule history
+ - `capsule completion --help` now provides guiding instructions for how to use
+
+## 📊 Capsule Benchmark
+ - Added `--accel` for specifying computer accelerator path (e.g. Vulkan)
+ - Added `capsule benchmark image` with accompanying `-r` argument
+
+# OxCapsule v0.5.0 - release July 13 2026
 
 Our latest OxCapsule version introduces the new `capsule agent`, `capsule orbit`, and `capsule completion` commands, as well as a variety of QOL improvements for consistency while using capsule. Also, `capsule cleanup` has been removed in favor of `capsule session`. To emulate the same behavior as `capsule cleanup`, run `capsule session endall`. 
 
@@ -31,7 +46,7 @@ To download the latest version, please try running "capsule update" to get the n
 - `benchmark`: Cleaner error handling and formatting
 - `mcp`: More consistency in MCP usage
 
-# OxCapsule v0.3.156
+# OxCapsule v0.3.156 - release May 28 2026
 
 Our latest OxCapsule version introduces the new `capsule claude` and `capsule comfy` commands, as well as a variety of QOL improvements for consistency while using capsule. To download the latest version, please try running "capsule update" to get the newest capsule version.
 
@@ -63,7 +78,7 @@ What's New:
 - `benchmark`: Allow multi-segment model identifiers
 - Added modelhosting configurations
 
-# OxCapsule v0.3.127
+# OxCapsule v0.3.127 - release April 29 2026
 
 Our latest OxCapsule version introduces app streaming, the new `capsule schedule` and `capsule chat` commands, and a variety of quality of life improvements across the CLI and streamer. The `capsule launch` command has been deprecated in favor of `capsule terminal`. Make sure to run `capsule update` to get the newest version.
 
@@ -145,7 +160,7 @@ What's New:
 ## 📦 Storage Changes
 - Flexible storage quota design to control available storage
 
-## v0.2.83 - release Feb 18 2026
+# OxCapsule v0.2.83 - release Feb 18 2026
 
 Our latest OxCapsule version adds several new functionalities focusing on enhancing storage solutions and data transfer.
 
@@ -193,7 +208,7 @@ What's New:
 ## 🚀 New Launch Options
 - `--options` is available when using the `ssh`, `term`, or `scp` commands, allows the passing in of ssh options.
 
-## v0.2.48 - release Jan 14 2026
+# OxCapsule v0.2.48 - release Jan 14 2026
 
 ### What's New:
 
@@ -219,7 +234,7 @@ What's New:
 * Windows updates can fail to remove all files and get stuck in a bad state
 * `capsule list` shows blackspace for colored text on macOS
 
-## v0.2.29 - release Dec 4 2025
+# OxCapsule v0.2.29 - release Dec 4 2025
 
 ### What's New:
 
