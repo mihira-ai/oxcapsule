@@ -1,5 +1,26 @@
 # Releases
 
+# OxCapsule v0.5.53 - release August 13 2026
+This release focuses on error and bug messages for commands like `term`, `session`, `stream`, and `schedule`.
+
+## 🐛 Tweaks and Bug Fixes
+ - Capsule tracks unified NVIDIA GPU memory
+ - Caught several unhandled exceptions
+ - Fixed issues with storage improperly mounting/unmounting
+
+## 📊 Langfuse Tracing
+ - Added OTEL Langfuse tracing across OxCapsule agents with a proxy URL
+
+## 📊 OxCapsule Benchmark
+ - Fixed `--accel` to reject invalid values
+ - Removed cmmd from default image quality set
+
+## 💻 Streaming
+- More responsive UI for window resizing
+- Fixed bugs relating to the sizing and responsiveness of the overlay panel
+- Mac streaming preserves source aspect ratio
+- Better logging for streams
+
 # OxCapsule v0.5.39 - release July 30 2026
 This release focuses on error and bug messages for commands like `term`, `session`, `stream`, and `schedule`.
 
