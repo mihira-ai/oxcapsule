@@ -17,7 +17,7 @@ OxCapsule is a CLI tool that instantly connects you to high-performance remote m
 - **Zero Setup**: No infrastructure management, no complex configurations
 
 ## Download
-The CLI binaries are publicly available. Refer to the [installation instructions](oxcapsule_install_guide.md). However, keep in mind that OxCapsule accounts are only provided as public beta on an invite basis.
+The CLI binaries are publicly available. Refer to the [installation instructions](oxcapsule_install_guide.md). However, keep in mind that OxCapsule accounts are only provided on an invite basis.
 
 ## Installation
 **Note: If you already have capsule downloaded and wish to download the latest version, please use the `capsule update` command to download the latest cli version**
@@ -25,21 +25,21 @@ The CLI binaries are publicly available. Refer to the [installation instructions
 For detailed platform specific installation steps and screenshots. Refer to [Installation Guide](./oxcapsule_install_guide.md)
 
 ## First Time Authentication
-Users need to authenticate and validate their email address used for the beta access, set password for the authentication to be successfull. Note: This is one time process only.
+Users need to authenticate and validate their email address used for the beta access, set password for the authentication to be successful. Note: This is one time process only.
 ```bash
 capsule auth login              # Login
 ```
 **Once the user is navigated to login webpage. Please follow the steps below:**
   - Click on "Forgot your password" link
-  - In the email address field, enter the emaild id used for requesting the beta access
+  - In the email address field, enter the email id used for requesting the beta access
   - Click on Send Verification Code
-  - Enter the verfication code received in the email address
+  - Enter the verification code received in the email address
   - Click on Verify code
   - Once verification is completed, click on Continue button
   - Enter your new password and confirm your password
   - Click Continue
   - Password reset is now completed
-  - Users will be provided a code, copy the code and paste in the terminal for successfull authentication
+  - Users will be provided a code, copy the code and paste in the terminal for successful authentication
 
 **User can now continue with the available commands section on terminal**
 
@@ -109,7 +109,7 @@ capsule config banner           # Toggle banner display
 - **CLI Help**: `capsule --help` or `capsule [command] --help`
 - **Discord**: Join our invite-only OxCapsule community. [Discord/OxCapsule](https://discord.gg/Ds5hUdng)
 - **Known Issues**: Please refer to github issues on the project here: [OxCapsule/issues](https://github.com/mihira-ai/oxcapsule/issues)
-- **Maintanence and Down Time**: Please note that there will be scheduled maintanence which can cause down time. Users are advised to check the discord channel for any updates
+- **Maintenance and Down Time**: Please note that there will be scheduled maintenance which can cause down time. Users are advised to check the discord channel for any updates
 - **Support**: OxCapsule support is available Monday–Friday, 9 AM–5 PM PT (US West Coast), please expect delays in responses depending on your time zone.
 
 ## [OXMIQ.AI](https://oxmiq.ai/)
