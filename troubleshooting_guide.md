@@ -20,7 +20,7 @@
 
 4. **MacOS prompt to "Allow Keychain Access"**
    - Your authentication token needs to be stored securely in Apple's vault.
-   - Enter your system password and click "Always Allow" to allow OxCapsule to safely store credentials on your system. This prompt will reappear after every capsule update.
+   - Enter your system password and click **"Always Allow"** to allow OxCapsule to safely store credentials on your system. This prompt will reappear after every capsule update.
 
 5. **Mounting a Personal OneDrive**
    - Open a docker container on remote machine
