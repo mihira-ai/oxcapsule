@@ -17,10 +17,10 @@ OxCapsule is a CLI tool that instantly connects you to high-performance remote m
 - **Zero Setup**: No infrastructure management, no complex configurations
 
 ## Download
-OxCapsule is currently provided as public beta only with invites. Users will be receiving email after the access is approved and will require to follow the steps in the email to download the OxCapsule client
+The CLI binaries are publicly available. Refer to the [installation instructions](oxcapsule_install_guide.md). However, keep in mind that OxCapsule accounts are only provided as public beta on an invite basis.
 
 ## Installation
-**Note: If you are updating capsule, please use the `capsule update` command to download the latest cli version**
+**Note: If you already have capsule downloaded and wish to download the latest version, please use the `capsule update` command to download the latest cli version**
 
 For detailed platform specific installation steps and screenshots. Refer to [Installation Guide](./oxcapsule_install_guide.md)
 
