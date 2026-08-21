@@ -1,5 +1,18 @@
 # Releases
 
+# OxCapsule v0.5.77 - release August 20 2026
+Our newest release adds a new announcements feature, and QOL improvements to streaming, authentication, and OxCapsule installation.
+
+## 🐛 Bug Fixes
+ - Simpler, single command installations for OxCapsule
+ - OxCapsule handles expired CAPSULE_AUTH_TOKEN env var gracefully
+## 📢 Announcements
+ - New announcement feature that will display periodic announcements
+## 📆 Schedule
+ - Node-side job runner, opt-in per job
+## 📺 Streaming
+- Fixed issue regarding blurry sessions when streaming from a Mac.
+
 # OxCapsule v0.5.53 - release August 13 2026
 This release focuses on error and bug messages for commands like `term`, `session`, `stream`, and `schedule`.
 
