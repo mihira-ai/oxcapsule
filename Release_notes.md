@@ -1,5 +1,33 @@
 # Releases
 
+# OxCapsule v0.5.108 - release September 3 2026
+This release adds QOL changes to the serve and benchmark commands. The ability to connect to Windows machines through `capsule term` has also been provided. 
+
+You may update your OxCapsule clients with the command `capsule update`.
+
+## 📺 Term
+ - You may now access Windows machines using `capsule term`
+## 📊 Benchmark
+ - Adaptive formatting for results
+ - Agentic phase inherent to every LLM
+ - --modality passthrough for VLM
+## 🐕‍🦺 Serve
+- `capsule serve model list` displays available models 
+- Able to remove models with 'serve model remove'
+- --name flag added to `capsule serve model`, which allows the deployment of a duplicate copy of a model
+- --force flag added to `capsule serve model`, which triggers a rebuild of an existing model
+
+# OxCapsule v0.5.86 - release August 26 2026
+Our newest release adds QOL improvements to streaming, announcements, and serve.
+
+## 📢 Announcements
+ - Fixed bug where OxCapsule's animated banner would overwrite and cover up announcements
+## 🐕‍🦺 Serve
+ - llama.cpp SYCL recipe for Intel Arc GPUs
+ - Render KubeRay manifests from a caller-supplied spec
+## 📺 Streaming
+ - Increased Linux streaming reliability
+
 # OxCapsule v0.5.77 - release August 20 2026
 Our newest release adds a new announcements feature, and QOL improvements to streaming, authentication, and OxCapsule installation.
 
@@ -11,7 +39,7 @@ Our newest release adds a new announcements feature, and QOL improvements to str
 ## 📆 Schedule
  - Node-side job runner, opt-in per job
 ## 📺 Streaming
-- Fixed issue regarding blurry sessions when streaming from a Mac.
+ - Fixed issue regarding blurry sessions when streaming from a Mac.
 
 # OxCapsule v0.5.53 - release August 13 2026
 This release focuses on error and bug messages for commands like `term`, `session`, `stream`, and `schedule`.
